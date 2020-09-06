@@ -69,7 +69,8 @@ func init() {
 func login(w http.ResponseWriter, r *http.Request) {
 	var ErrorObject Error
 	//db, err := gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/reactdb")
-	db, err := gorm.Open("mysql", "sql12362860:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12362860")
+	db, err := gorm.Open("mysql", "u8azoypeczz4b5j6:PTpFSMM4iZmMsKw3KAUx@tcp(bm55yqcssrg7zp4y0zxa-mysql.services.clever-cloud.com:3306)/bm55yqcssrg7zp4y0zxa")
+	//db, err := gorm.Open("mysql", "sql12364079:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12364079")
 	if err != nil {
 		ErrorObject = ErrorObjectInitialisation("Internal Server Error", "Internal Server Error", 500, "Internal Server Error")
 		ErrorLogger.Println(err)
@@ -105,7 +106,8 @@ func signup(w http.ResponseWriter, r *http.Request) {
 	var user Users
 	var ErrorObject Error
 	//db, err := gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/reactdb")
-	db, err := gorm.Open("mysql", "sql12362860:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12362860")
+	//db, err := gorm.Open("mysql", "sql12364079:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12364079")
+	db, err := gorm.Open("mysql", "u8azoypeczz4b5j6:PTpFSMM4iZmMsKw3KAUx@tcp(bm55yqcssrg7zp4y0zxa-mysql.services.clever-cloud.com:3306)/bm55yqcssrg7zp4y0zxa")
 	if err != nil {
 		ErrorObject = ErrorObjectInitialisation("Internal Server Error", "Internal Server Error", 500, "Internal Server Error")
 		ErrorLogger.Println(err)
@@ -181,7 +183,8 @@ func taskStatusFalse(w http.ResponseWriter, r *http.Request) {
 	var usercount int
 	var ErrorObject Error
 	//db, err := gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/reactdb")
-	db, err := gorm.Open("mysql", "sql12362860:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12362860")
+	//db, err := gorm.Open("mysql", "sql12364079:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12364079")
+	db, err := gorm.Open("mysql", "u8azoypeczz4b5j6:PTpFSMM4iZmMsKw3KAUx@tcp(bm55yqcssrg7zp4y0zxa-mysql.services.clever-cloud.com:3306)/bm55yqcssrg7zp4y0zxa")
 	if err != nil {
 		ErrorObject = ErrorObjectInitialisation("Internal Server Error", "Internal Server Error", 500, "Internal Server Error")
 		ErrorLogger.Println(err)
@@ -216,7 +219,8 @@ func taskStatusTrue(w http.ResponseWriter, r *http.Request) {
 	var usercount int
 	var ErrorObject Error
 	//db, err := gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/reactdb")
-	db, err := gorm.Open("mysql", "sql12362860:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12362860")
+	//db, err := gorm.Open("mysql", "sql12364079:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12364079")
+	db, err := gorm.Open("mysql", "u8azoypeczz4b5j6:PTpFSMM4iZmMsKw3KAUx@tcp(bm55yqcssrg7zp4y0zxa-mysql.services.clever-cloud.com:3306)/bm55yqcssrg7zp4y0zxa")
 	if err != nil {
 		ErrorObject = ErrorObjectInitialisation("Internal Server Error", "Internal Server Error", 500, "Internal Server Error")
 		ErrorLogger.Println(err)
@@ -248,7 +252,8 @@ func taskUsers(w http.ResponseWriter, r *http.Request) {
 	InfoLogger.Println("Called to get the usernames of all users")
 	var ErrorObject Error
 	//db, err := gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/reactdb")
-	db, err := gorm.Open("mysql", "sql12362860:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12362860")
+	//db, err := gorm.Open("mysql", "sql12364079:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12364079")
+	db, err := gorm.Open("mysql", "u8azoypeczz4b5j6:PTpFSMM4iZmMsKw3KAUx@tcp(bm55yqcssrg7zp4y0zxa-mysql.services.clever-cloud.com:3306)/bm55yqcssrg7zp4y0zxa")
 	if err != nil {
 		ErrorObject = ErrorObjectInitialisation("Internal Server Error", "Internal Server Error", 500, "Internal Server Error")
 		ErrorLogger.Println(err)
@@ -277,7 +282,8 @@ func feedUpdate(w http.ResponseWriter, r *http.Request) {
 	var user Users
 	var ErrorObject Error
 	//db, err := gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/reactdb")
-	db, err := gorm.Open("mysql", "sql12362860:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12362860")
+	//db, err := gorm.Open("mysql", "sql12364079:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12364079")
+	db, err := gorm.Open("mysql", "u8azoypeczz4b5j6:PTpFSMM4iZmMsKw3KAUx@tcp(bm55yqcssrg7zp4y0zxa-mysql.services.clever-cloud.com:3306)/bm55yqcssrg7zp4y0zxa")
 	if err != nil {
 		ErrorObject = ErrorObjectInitialisation("Internal Server Error", "Internal Server Error", 500, "Internal Server Error")
 		ErrorLogger.Println(err)
@@ -312,7 +318,8 @@ func feedDelete(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	feedid := vars["feedId"]
 	//db, err := gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/reactdb")
-	db, err := gorm.Open("mysql", "sql12362860:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12362860")
+	//db, err := gorm.Open("mysql", "sql12364079:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12364079")
+	db, err := gorm.Open("mysql", "u8azoypeczz4b5j6:PTpFSMM4iZmMsKw3KAUx@tcp(bm55yqcssrg7zp4y0zxa-mysql.services.clever-cloud.com:3306)/bm55yqcssrg7zp4y0zxa")
 	if err != nil {
 		ErrorObject = ErrorObjectInitialisation("Internal Server Error", "Internal Server Error", 500, "Internal Server Error")
 		ErrorLogger.Println(err)
@@ -348,7 +355,8 @@ func feedstatus(w http.ResponseWriter, r *http.Request) {
 	feedid := vars["feedId"]
 
 	//db, err := gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/reactdb")
-	db, err := gorm.Open("mysql", "sql12362860:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12362860")
+	//db, err := gorm.Open("mysql", "sql12364079:nxBBF29dcx@tcp(sql12.freemysqlhosting.net:3306)/sql12364079")
+	db, err := gorm.Open("mysql", "u8azoypeczz4b5j6:PTpFSMM4iZmMsKw3KAUx@tcp(bm55yqcssrg7zp4y0zxa-mysql.services.clever-cloud.com:3306)/bm55yqcssrg7zp4y0zxa")
 	if err != nil {
 		ErrorObject = ErrorObjectInitialisation("Internal Server Error", "Internal Server Error", 500, "Internal Server Error")
 		ErrorLogger.Println(err)
